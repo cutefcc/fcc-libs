@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.8.0...@fcc/hooks@1.9.0) (2022-03-07)
+
+
+### Features
+
+* 减少输出的类型 ([02062b7](https://github.com/cutefcc/fcc-libs/commit/02062b7a476c10b34de3adc0b7c1a4cc323c3a7c))
+* 减少输出的类型 ([cbdb200](https://github.com/cutefcc/fcc-libs/commit/cbdb200d24523f9e3fe196ee18bc0d63a022c32a))
+
+
+
+
+
 # [1.8.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.7.0...@fcc/hooks@1.8.0) (2022-03-07)
 
 

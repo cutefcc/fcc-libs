@@ -1,6 +1,6 @@
 {
   "name": "@fcc/utils",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "> TODO: description",
   "author": "cutefcc <cutefcc@126.com>",
   "homepage": "",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@fcc/core": "^1.1.0",
-    "@fcc/hooks": "^1.8.0"
+    "@fcc/hooks": "^1.9.0"
   },
   "gitHead": "fc5cdb8e0a8dd2b7d9d26ebce1c46358f190aa2b"
 }
