@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.9.0...@fcc/hooks@1.9.0) (2022-03-07)
+
+
+### Features
+
+* test microbundle ([3c9663b](https://github.com/cutefcc/fcc-libs/commit/3c9663bb3956b9cbea5525be4ce2ca95dcd82ba7))
+
+
+
+
+
 # [1.9.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.8.0...@fcc/hooks@1.9.0) (2022-03-07)
 
 
