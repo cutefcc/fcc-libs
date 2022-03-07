@@ -6,4 +6,5 @@ export function useAsycFn(fn, deps = [], initialState = {loading: false}) {
     //     fn()
     // }
     // return [state, callback];
+    
 }
