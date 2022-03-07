@@ -2,11 +2,14 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@microsoft/api-extractor": "^7.19.4",
+    "@types/react": "^17.0.39",
+    "lerna": "^4.0.0",
+    "microbundle": "^0.14.2",
+    "typedoc": "^0.22.13"
   },
   "dependencies": {
     "immer": "^9.0.12",
-    "microbundle": "^0.14.2",
     "react": "^17.0.2"
   }
 }

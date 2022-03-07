@@ -5,7 +5,16 @@
   "author": "cutefcc <cutefcc@126.com>",
   "homepage": "https://github.com/cutefcc/fcc-libs#readme",
   "license": "ISC",
-  "main": "lib/index.ts",
+  "main": "./dist/index.cjs",
+  "source": "lib/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "module": "./dist/index.module.js",
+  "type":"module",
+  "types": "./dist/typings/index.d.ts",
+  "unpkg": "./dist/index.umd.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -18,7 +27,11 @@
     "url": "git+https://github.com/cutefcc/fcc-libs.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "microbundle lib/index.ts",
+    "api:init": "api-extractor init",
+    "api:doc": "typedoc --out docs lib",
+    "api:run": "api-extractor run --local --verbose"
   },
   "bugs": {
     "url": "https://github.com/cutefcc/fcc-libs/issues"

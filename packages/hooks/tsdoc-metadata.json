@@ -1,0 +1,9 @@
+{
+	"tsdocVersion": "0.22.13",
+	"toolPackages": [
+		{
+			"packageName": "@microsoft/api-extractor",
+			"packageVersion": "7.12.1"
+		}
+	]
+}
