@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.5.0...@fcc/hooks@1.6.0) (2022-03-07)
+
+
+### Features
+
+* lib ([ae3d835](https://github.com/cutefcc/fcc-libs/commit/ae3d835b9837c7e5a7c179d328b597b0354afd4e))
+
+
+
+
+
 # [1.5.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.4.0...@fcc/hooks@1.5.0) (2022-03-07)
 
 
