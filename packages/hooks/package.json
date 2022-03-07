@@ -5,16 +5,14 @@
   "author": "cutefcc <cutefcc@126.com>",
   "homepage": "https://github.com/cutefcc/fcc-libs#readme",
   "license": "ISC",
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.module.js",
   "source": "lib/index.ts",
   "exports": {
-    "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
+    "default": "./dist/index.module.js"
   },
   "module": "./dist/index.module.js",
   "type": "module",
   "types": "./dist/typings/index.d.ts",
-  "unpkg": "./dist/index.umd.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
