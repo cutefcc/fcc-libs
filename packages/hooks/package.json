@@ -2,7 +2,7 @@
   "name": "@fcc/hooks",
   "version": "1.1.0",
   "description": "> TODO: description",
-  "author": "liuhao <liuhao@taou.com>",
+  "author": "cutefcc <cutefcc@126.com>",
   "homepage": "https://github.com/cutefcc/fcc-libs#readme",
   "license": "ISC",
   "main": "lib/index.ts",
