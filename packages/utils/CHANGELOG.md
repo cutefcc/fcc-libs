@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/utils@1.3.0...@fcc/utils@1.4.0) (2022-03-07)
+
+
+### Features
+
+* hooks ([6b148fc](https://github.com/cutefcc/fcc-libs/commit/6b148fc4a20dd0c193cf964320bbd3126d2bc8f4))
+
+
+
+
+
 # [1.3.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/utils@1.2.0...@fcc/utils@1.3.0) (2022-03-07)
 
 
