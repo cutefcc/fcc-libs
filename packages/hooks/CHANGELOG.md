@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.10.0...@fcc/hooks@1.10.0) (2022-03-07)
+
+
+### Features
+
+* test microbundle ([718fb82](https://github.com/cutefcc/fcc-libs/commit/718fb8227ff96709adc2bce6d1be99f33cf3a084))
+* test microbundle ([6121bbe](https://github.com/cutefcc/fcc-libs/commit/6121bbe2a12c7c519e028ecb2f9e16123e05d436))
+* test microbundle ([1efef91](https://github.com/cutefcc/fcc-libs/commit/1efef91ca7f31172d0e91f05e7e6529d0c8c3ea3))
+* test microbundle ([6616ac4](https://github.com/cutefcc/fcc-libs/commit/6616ac4e055ff7ad19152cdf339550be892af769))
+* test microbundle ([54d3088](https://github.com/cutefcc/fcc-libs/commit/54d3088de0c9967c56a98f96c1bb5abde2252990))
+* test microbundle ([28ee00a](https://github.com/cutefcc/fcc-libs/commit/28ee00a1e3cb6170bd16bd20a707ce8fdc9ba594))
+* test microbundle ([ad117d4](https://github.com/cutefcc/fcc-libs/commit/ad117d4a068795e5f64d1be9fb4c221809fb7f28))
+
+
+
+
+
 # [1.9.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.10.0...@fcc/hooks@1.9.0) (2022-03-07)
 
 
