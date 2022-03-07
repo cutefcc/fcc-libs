@@ -15,9 +15,11 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "dev": "microbundle"
+    "dev": "microbundle",
+    "ts": "ts-node ./lib/index.ts"
   },
   "dependencies": {
-    "@fcc/core": "^1.1.0"
+    "@fcc/core": "^1.1.0",
+    "@fcc/hooks": "^1.0.0"
   }
 }

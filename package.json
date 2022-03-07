@@ -5,6 +5,8 @@
     "lerna": "^4.0.0"
   },
   "dependencies": {
-    "microbundle": "^0.14.2"
+    "immer": "^9.0.12",
+    "microbundle": "^0.14.2",
+    "react": "^17.0.2"
   }
 }
