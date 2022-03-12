@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.11.0...@fcc/hooks@1.11.1) (2022-03-12)
+
+
+### Bug Fixes
+
+* delete lib ([39cf8e6](https://github.com/cutefcc/fcc-libs/commit/39cf8e6dc95140b42f2de6bc22d00e2f062d8ede))
+
+
+
+
+
 # [1.11.0](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.10.0...@fcc/hooks@1.11.0) (2022-03-07)
 
 
