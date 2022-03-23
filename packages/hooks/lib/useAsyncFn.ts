@@ -1,11 +1,75 @@
-import { useImmer } from './useImmer';
-export function useAsycFn(fn, deps = [], initialState = {loading: false}) {
-    console.log('dd4423233d')
-    // const [state, setState] = useImmer(initialState);
-    // const hooksDeps = [fn, isMounted, state.loading];
-    // const callback = () => {
-    //     fn()
-    // }
-    // return [state, callback];
+import { useImmer } from "./useImmer";
+import { useMountedState } from "./useMountedState";
+import { FuctionReturnPromise, PromiseType } from "./miseTypes";
+import { useCallback } from "react";
+type AsyncState<T> =
+  | {
+      loading: boolean;
+      error?: undefined;
+      value?: undefined;
+    }
+  | {
+      loading: true;
+      error?: Error | undefined;
+      value?: T;
+    }
+  | {
+      loading: false;
+      error?: Error;
+      value?: undefined;
+    }
+  | {
+      loading: false;
+      error?: undefined;
+      value?: T;
+    };
+// ReturnType 获取函数返回值的类型
+// 定义那个state
+type StateFromFunctionReturnPromise<T extends FuctionReturnPromise> =
+  AsyncState<ReturnType<T>>;
+// 返回的那个数组
+type AsyncFnReturn<T extends FuctionReturnPromise> = [
+  StateFromFunctionReturnPromise<T>,
+  T
+];
 
+export default function useAsycFn<T extends FuctionReturnPromise>(
+  fn: T,
+  //   deps = [],
+  initialState: StateFromFunctionReturnPromise<T> = {
+    loading: false,
+    error: undefined,
+    value: undefined,
+  }
+): AsyncFnReturn<T> {
+  const [state, setState] = useImmer(initialState);
+  const isMountedFn = useMountedState();
+  // const hooksDeps = [fn, isMounted, state.loading];
+  const callback = useCallback(() => {
+    if (state.loading) {
+      return;
+    }
+    return fn().then(
+      (value) => {
+        if (isMountedFn()) {
+          setState((draft) => {
+            draft.loading = false;
+            draft.value = value;
+          });
+          return value;
+        }
+      },
+      (error) => {
+        if (isMountedFn()) {
+          setState((draft) => {
+            draft.loading = false;
+            draft.error = new Error("数据请求失败");
+          });
+        }
+        return error;
+      }
+    );
+  }, [fn]);
+
+  return [state, <T>callback];
 }
