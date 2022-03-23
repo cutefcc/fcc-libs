@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.3](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.11.2...@fcc/hooks@1.11.3) (2022-03-23)
+
+
+### Bug Fixes
+
+* test publush ([836099c](https://github.com/cutefcc/fcc-libs/commit/836099c11cb354b47ed718d3c2b0c7c83d778520))
+* test publush ([3206369](https://github.com/cutefcc/fcc-libs/commit/3206369110189d2682c725d53478d923b4429845))
+
+
+
+
+
 ## [1.11.2](https://github.com/cutefcc/fcc-libs/compare/@fcc/hooks@1.11.1...@fcc/hooks@1.11.2) (2022-03-12)
 
 
