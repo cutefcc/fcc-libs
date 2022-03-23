@@ -6,7 +6,8 @@
   "version": "independent",
   "command": {
     "publish": {
-      "message": "[skip ci] chore: release"
+      "message": "[skip ci] chore: release",
+      "registry": "http://167.179.102.232:4873/"
     }
   },
   "ignoreChanges": ["**/node_modules/**", "**/__snapshots__/**"]
