@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/cutefcc/fcc-libs/issues"
   },
-  "gitHead": "b1217a292afbb1f70d7ed51abf8d035e4d2a2ce0",
+  "gitHead": "5af51b042823989761053fbb5502d0d91e59b92b",
   "peerDependencies": {
     "immer": "^9.0.12",
     "react": "^17.0.2",
