@@ -1,6 +1,6 @@
 {
   "name": "@fcc/utils",
-  "version": "1.5.17",
+  "version": "1.5.18",
   "description": "> TODO: description",
   "author": "cutefcc <cutefcc@126.com>",
   "homepage": "",
@@ -19,8 +19,8 @@
     "ts": "ts-node ./lib/index.ts"
   },
   "dependencies": {
-    "@fcc/core": "^1.1.8",
-    "@fcc/hooks": "^1.11.10"
+    "@fcc/core": "^1.1.9",
+    "@fcc/hooks": "^1.11.11"
   },
   "gitHead": "0bb08edb2eb9dd2703de34d1c1d2ea87991f1bd9"
 }
