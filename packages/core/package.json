@@ -17,5 +17,5 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "microbundle"
   },
-  "gitHead": "5af51b042823989761053fbb5502d0d91e59b92b"
+  "gitHead": "0bb08edb2eb9dd2703de34d1c1d2ea87991f1bd9"
 }

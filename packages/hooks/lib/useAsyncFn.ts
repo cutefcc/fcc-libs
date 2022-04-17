@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useImmer } from "./useImmer";
 import { useMountedState } from "./useMountedState";
 import { FuctionReturnPromise, PromiseType } from "./miseTypes";
@@ -44,32 +45,39 @@ export default function useAsycFn<T extends FuctionReturnPromise>(
 ): AsyncFnReturn<T> {
   const [state, setState] = useImmer(initialState);
   const isMountedFn = useMountedState();
+  const lastCallId = useRef(0);
   // const hooksDeps = [fn, isMounted, state.loading];
-  const callback = useCallback(() => {
-    if (state.loading) {
-      return;
-    }
-    return fn().then(
-      (value) => {
-        if (isMountedFn()) {
-          setState((draft) => {
-            draft.loading = false;
-            draft.value = value;
-          });
-          return value;
-        }
-      },
-      (error) => {
-        if (isMountedFn()) {
-          setState((draft) => {
-            draft.loading = false;
-            draft.error = new Error("数据请求失败");
-          });
-        }
-        return error;
+  const callback = useCallback(
+    (...args: Parameters<T>): ReturnType<T> => {
+      const callId = ++lastCallId.current;
+      if (!state.loading) {
+        setState((draft) => {
+          draft.loading = true;
+        });
       }
-    );
-  }, [fn]);
+      return fn(...args).then(
+        (value) => {
+          if (isMountedFn() && callId === lastCallId.current) {
+            setState((draft) => {
+              draft.loading = false;
+              draft.value = value;
+            });
+            return value;
+          }
+        },
+        (error) => {
+          if (isMountedFn() && callId === lastCallId.current) {
+            setState((draft) => {
+              draft.loading = false;
+              draft.error = new Error("数据请求失败");
+            });
+          }
+          return error;
+        }
+      ) as ReturnType<T>;
+    },
+    [fn]
+  );
 
-  return [state, <T>callback];
+  return [state, callback as unknown as T];
 }
